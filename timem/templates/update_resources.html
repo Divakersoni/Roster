@@ -1,0 +1,36 @@
+{% extends 'base-main.html' %}
+{% load staticfiles %}
+{% block content %}
+  <div class="row" style="margin-top:2%;">
+    <div class="col-sm-3">
+      <div class="index1">
+        <a class="generatel" href="/add_teacher/"><h2 class ='generate'>Update<br>Teacher</h2></a>
+      </div>
+
+        <div class="index1">
+          <a class="generatel" href="/add_subject/"><h2 class ='generate'>Update<br>Subject </h2></a>
+        </div>
+    </div>
+      <div class="col-sm-3">
+        <div class="index1">
+          <a class="generatel" href="/add_class/"><h2 class='generate'>Update<br>ClassRoom</h2></a>
+        </div>
+        <div class="index1">
+          <a class="generatel" href="/add_lab/"><h2 class='generate'>Update<br>LAB</h2></a>
+        </div>
+      </div>
+    <div class="col-sm-3">
+      <div class="index1">
+        <a class="generatel" href="/add_sem/"><h2 class='generate'>Update<br>Semester</h2></a>
+      </div>
+      <div class="index1">
+        <a class="generatel" href="/add_sec/"><h2 class='generate'>Update<br>Section</h2></a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="index1">
+        <a class="generatel" href="/add_department/"><h2 class ='generate'>Add<br>Department</h2></a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

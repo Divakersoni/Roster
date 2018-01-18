@@ -1,0 +1,132 @@
+{% extends 'base-main.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="team-section" id="team">
+	<div class="container">
+		<h3 class="w3l-title">Centeral TimeTable Comittee</h3>
+		<div class="box2">
+			{% if developments %}
+			{% for development in developments %}
+			<div class="col-md-3 col-xs-3 s-1">
+				<div class="view view-fifth">
+					<img src="{{ MEDIA_URL }}images/{{ development.image_url }}" alt="{{ development.name }}">
+					<div class="mask">
+						<ul>
+							<li>
+								<div class="morph pic fb_icon1">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</div>
+							</li>
+							<li>
+								<div class="morph pic fb_icon2">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</div>
+							</li>
+							<li>
+								<div class="morph pic fb_icon3">
+									<i class="fa fa-dribbble" aria-hidden="true"></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h3>{{ development.name }}</h3>
+			</div>
+			{% endfor %}
+			{% else %}
+			<div class="col-md-3 col-xs-3 s-1">
+				<div class="view view-fifth">
+					<img src="{{ MEDIA_URL }}images/dummy-girl.jpg" alt="chef">
+					<div class="mask">
+						<ul>
+							<li>
+								<div class="morph pic fb_icon1">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</div>
+							</li>
+							<li>
+								<div class="morph pic fb_icon2">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</div>
+							</li>
+							<li>
+								<div class="morph pic fb_icon3">
+									<i class="fa fa-dribbble" aria-hidden="true"></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h3>Not image found</h3>
+			</div>
+			{% endif %}
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<br><br>
+<div class="team-section" id="team">
+	<div class="container">
+		<h3 class="w3l-title">Departmental TimeTable Comittee</h3>
+		<div class="box2">
+			{% if developments %}
+			{% for development in developments %}
+			<div class="col-md-3 col-xs-3 s-1">
+				<div class="view view-fifth">
+					<img src="{{ MEDIA_URL }}images/{{ development.image_url }}" alt="{{ development.name }}">
+					<div class="mask">
+						<ul>
+							<li>
+								<div class="morph pic fb_icon1">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</div>
+							</li>
+							<li>
+								<div class="morph pic fb_icon2">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</div>
+							</li>
+							<li>
+								<div class="morph pic fb_icon3">
+									<i class="fa fa-dribbble" aria-hidden="true"></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h3>{{ development.name }}</h3>
+			</div>
+			{% endfor %}
+			{% else %}
+			<div class="col-md-3 col-xs-3 s-1">
+				<div class="view view-fifth">
+					<img src="{{ MEDIA_URL }}images/dummy-girl.jpg" alt="chef">
+					<div class="mask">
+						<ul>
+							<li>
+								<div class="morph pic fb_icon1">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</div>
+							</li>
+							<li>
+								<div class="morph pic fb_icon2">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</div>
+							</li>
+							<li>
+								<div class="morph pic fb_icon3">
+									<i class="fa fa-dribbble" aria-hidden="true"></i>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h3>Not image found</h3>
+			</div>
+			{% endif %}
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base-main.html' %}
+{% load staticfiles %}
+{% block content %}
+  <div class="row" style="margin-top:2%;">
+    <div class="col-sm-1">
+        <div ><h4 >ID</h4></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >Teacher</h4></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >Experience</h4></a></div>
+    </div>
+      <div class="col-sm-2">
+        <div ><h4 >Department</h4></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >Designation</h4></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >Subject 1</h4></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >Subject 2</h4></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >Subject 3</h4></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >Subject 4</h4></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >Weekly load</h4></a></div>
+    </div>
+  </div>
+    {%if teacher%}
+    {%for i in teacher%}
+  <div class="row" style="margin-top:2%;">
+      <div class="col-sm-1">
+        <div ><h6 >{{i.id}}</h6></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h6 >{{i.teacher_name}}</h6></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h6 >{{i.years_of_experience}}</h6></a></div>
+    </div>
+      <div class="col-sm-2">
+        <div ><h6 >{{i.department}}</h6></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h6>{{i.designation}}</h6></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h6 >{{i.subject1}}</h6></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h6 >{{i.subject2}}</h6></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h6 >{{i.subject3}}</h6></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h6 >{{i.subject4}}</h6></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h6 >{{i.teaching_hours_per_week}}</h6></a></div>
+    </div>
+  </div>
+{%endfor%}
+{%endif%}
+{% endblock %}

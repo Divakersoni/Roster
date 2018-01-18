@@ -1,0 +1,48 @@
+{% extends 'base-main.html' %}
+{% load staticfiles %}
+{% load static %}
+{% block content %}
+     <div class="row">
+        <div class="col-sm-6" style="">
+            <div class="new1">
+                <h1 class="new2">Want to <br><span style="color:red;">GENERATE</span> time table ?</h1>
+            </div>
+          <div class="row" style="margin-left:10%;">
+            <div class="col-sm-3">
+              <div class="new123">
+                <a href="/admin/" style="color:black"><h4><center>CTTI<br>Login</center></h4></a></div></div>
+                <div class="col-sm-3"><div class="new123">
+                <a href="/dti/" style="color:black"><h4><center>DTI <br>Login</center></h4></a></div></div>
+            <!--<div class="col-sm-2"><div class="new123" >-->
+                   <!--<select class="form-control" name="" onchange="location = this.value;">-->
+                        <!--<option value="">Teacher</option>-->
+                        <!--{% if sec %}-->
+                        <!--{% for i in sec %}-->
+                        <!--<option value="{{ i.id }}">{{i.sem.sem}},{{i.dept.department_name}},{{i.Section}}</option>-->
+                        <!--{% endfor %}-->
+                        <!--{%endif%}-->
+                    <!--</select>-->
+                  <!--</div>-->
+            </div>
+           </div>
+
+        <div class="col-sm-6">
+            <div class="new1">
+                <h1 class="new2">Want to <br><span style="color:red;">CREATE</span> time table ?</h1>
+            </div>
+            <div class="new12" style="margin-left:18%; width:50%">
+                <div class="row" style="margin-top:8%">
+                    <select class="form-control" name="" onchange="location = this.value;">
+                        <option value="">Select Semester, Department and Section</option>
+                        {% if sec %}
+                        {% for i in sec %}
+                        <option value="{{ i.id }}">{{i.sem.sem}},{{i.dept.department_name}},{{i.Section}}</option>
+                        {% endfor %}
+                        {%endif%}
+                    </select>
+                </div>
+            </div>
+        </div>
+</div>
+<h3 style="margin-top:10%">Done with adding <a href="/timet1/">click here</a> to genrate</h3>
+{% endblock %}

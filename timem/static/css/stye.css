@@ -1,0 +1,253 @@
+.new12{
+margin-left:13%;
+}
+.new123{
+margin-top:10%;
+margin-left:40%;
+width:100%;
+text-decoration:none;
+color: black;
+border: 2px solid black;
+border-radius: 10px;
+}
+
+
+.new2{
+font-size:3em;
+color : black;
+}
+.new1{
+margin-left:15%;
+margin-top:30%;
+}
+
+.menu-outer {
+	height: 84px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+a:hover{
+text-decoration:none;
+font-weight:bold;
+}
+
+li {
+float:left;
+list-style:none;
+margin:15px;
+color:black;
+font-size:20px;
+}
+li span {
+color:black;}
+.heading{
+color: #1491e5; /* logo color*/
+text-align:center;
+font-size: 420%;
+}
+
+.foot{
+color: #1491e5;
+margin-top:100px;
+text-align:center;
+position:fixed;
+left:0px;
+right:0px;
+bottom:0px;
+}
+
+.index1{
+text-align:center;
+margin-top:10px;
+margin-left:25%;
+max-width:50%;
+height:100px;
+}
+
+.index12{
+text-align:center;
+margin-top:10px;
+margin-left:5%;
+max-width:50%;
+height:100px;
+}
+
+.index2{
+color:black;
+background-color:#1491e5;
+border-radius:10px;
+}
+
+.generate{
+margin-left:35%;
+max-width:70%;
+color:black;
+background-color:#1491e5;
+border-radius:10px;
+}
+
+.master{
+margin-left:15%;
+max-width:70%;
+color:black;
+background-color:#1491e5;
+border-radius:10px;
+}
+
+.view_time{
+
+color:black;
+height:100px;
+background-color:#1491e5;
+border-radius:10px;
+width:200%;
+}
+
+.generatel:hover{
+text-decoration:none;
+}
+
+                         /* LOGIN PAGE*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.select1{
+margin-left:10px;
+	font-size: 1em;
+	padding: 3  px;
+	border-radius: 50px;
+}
+/* Set a style for all buttons */
+button {
+    background-color: transparent;
+    color: black;
+    padding: 0px 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #1491e5;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 25%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    margin-left:8%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+.input1{
+max-width:50%;
+}
+.loginb{
+width: auto;
+padding: 10px 18px;
+background-color: #1491e5;
+border-radius:10px;
+color:black;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+.team-section{
+padding:2em o;}
+
+h3.w3l-title {
+    font-size: 3.5em;
+    color: #111;
+    text-align: center;
+    letter-spacing: 1px;
+	position:relative;
+}
+
+.box2 {
+    margin-top: 3em;
+}
+ .mask{
+ left: -30px;}
+
+

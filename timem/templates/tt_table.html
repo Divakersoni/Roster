@@ -1,0 +1,54 @@
+{% extends 'base-main.html' %}
+{% load staticfiles %}
+{% block content %}
+  <div class="row" style="margin-top:2%;">
+    <div class="col-sm-1">
+        <div ><h4 >Day</h4></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >P1</h4></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >P2</h4></a></div>
+    </div>
+      <div class="col-sm-2">
+        <div ><h4 >P3</h4></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >P4</h4></a></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >P5</h4></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >P6</h4></a></div>
+    </div>
+  </div>
+    {%if tf%}
+    {%for i in tf%}
+  <div class="row" style="margin-top:2%;">
+    <div class="col-sm-1"">
+        <div ><h4 >{{i.day_type}}</h4></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >{{i.p1}}</h4></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >{{i.p2}}</h4></a></div>
+    </div>
+      <div class="col-sm-2">
+        <div ><h4 >{{i.p3}}</h4></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >{{i.p4}}</h4></a></div>
+    </div>
+    <div class="col-sm-2">
+      <div ><h4 >{{i.p5}}</h4></a></div>
+    </div>
+    <div class="col-sm-1">
+      <div ><h4 >{{i.p6}}</h4></a></div>
+    </div>
+  </div>
+{%endfor%}
+{%endif%}
+{% endblock %}

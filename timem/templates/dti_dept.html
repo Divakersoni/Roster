@@ -1,0 +1,45 @@
+{% extends 'base-main.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="row" style="margin-top:2%;">
+    {%if dept%}
+    {%for i in dept%}
+    <div class="col-sm-3">
+      <div class="index12">
+        <a class="generatel" href="/department/{{i.id}}"><h2 class ='view_time'>{{i.department_name}}<br>({{i.department_initials}})</h2></a>
+      </div>
+    </div>
+    {%endfor%}
+    {%else%}
+    <div class="col-sm-3">
+      <div class="index12">
+        <a class="generatel" href="/generate/"><h2 class ='view_time'>Civil Engineering (CE)</h2></a>
+      </div>
+      <div class="index12">
+        <a class="generatel" href="/generate/"><h2 class ='view_time'>Computer Science & Engineering<br> (CSE)</h2></a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="index12">
+        <a class="generatel" href="/generate/"><h2 class ='view_time'>Electronics & Electrical Engineering<br> (ECE)</h2></a>
+      </div>
+      <div class="index12">
+        <a class="generatel" href="/generate/"><h2 class ='view_time'>Electrical Engineering <br>(EE)</h2></a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="index12">
+        <a class="generatel" href="/generate/"><h2 class ='view_time'>Information Technology<br> (IT)</h2></a>
+      </div>
+      <div class="index12">
+        <a class="generatel" href="/generate/"><h2 class ='view_time'>Mechanical Engineering <br>(ME)</h2></a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="index12">
+        <a class="generatel" href="/generate/"><h2 class ='view_time'>First Year<br>(I)</h2></a>
+      </div>
+    </div>
+{%endif%}
+</div>
+{% endblock %}
